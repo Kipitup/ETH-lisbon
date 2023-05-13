@@ -5,15 +5,17 @@ import "forge-std/Test.sol";
 
 import {AaveInterface} from "./interfaces/AaveInterface.sol";
 import {ERC20Interface} from "./interfaces/ERC20Interface.sol";
+import {NftfiInterface} from "./interfaces/NftfiInterface.sol";
 import "uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router02.sol";
 
 contract FlashLoan is Test {
     uint256 public number;
-
     AaveInterface public aave;
+    NftfiInterface public nftfi;
 
     constructor() {
         aave = AaveInterface(0x7b5C526B7F8dfdff278b4a3e045083FBA4028790); // goerli
+        nftfi = NftfiInterface(0x77097f421CEb2454eB5F77898d25159ff3C7381d);
     }
 
     function getCurrentFee() external view returns (uint128) {
@@ -29,7 +31,7 @@ contract FlashLoan is Test {
         returns (bool)
     {
         uint256 amountOwed = amount + premium;
-        console.log("amount owned %s and premium %s", amountOwed, premium);
+        // console.log("amount owned %s and premium %s", amountOwed, premium);
         ERC20Interface(asset).approve(address(aave), amountOwed);
 
         // We should have 1005 weth.
@@ -89,5 +91,20 @@ contract FlashLoan is Test {
         amounts = uniswapV2Router.swapExactTokensForTokens(_amountIn, _amountOutMin, path, _to, _deadline);
 
         return amounts;
+    }
+
+    // Add a function to call the payBackLoan function in the external contract
+    function payBackLoan(uint32 _loanId) public {
+        address NFTFI_ALLOW = 0x77097f421CEb2454eB5F77898d25159ff3C7381d;
+        address WETH = 0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6;
+        console.log("balance repay %s", ERC20Interface(WETH).balanceOf(address(this)));
+        console.log("account flashloan %s", address(this));
+
+        ERC20Interface(WETH).approve(NFTFI_ALLOW, type(uint256).max);
+
+        nftfi.payBackLoan(_loanId);
+        bool isRepaidOrLiquidated = nftfi.loanRepaidOrLiquidated(_loanId);
+        console.log("isRepaidOrLiquidated %s", isRepaidOrLiquidated);
+        require(isRepaidOrLiquidated, "Loan not repaid or liquidated");
     }
 }

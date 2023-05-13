@@ -264,8 +264,8 @@
       }
     },
     "src/FlashLoan.sol": {
-      "lastModificationDate": 1684000071180,
-      "contentHash": "70fd0e96ab7f04dabda46ecc70f9c4ec",
+      "lastModificationDate": 1684012875823,
+      "contentHash": "0735000dc768eac2d7d70229603b7b81",
       "sourceName": "src/FlashLoan.sol",
       "solcConfig": {
         "settings": {
@@ -303,7 +303,8 @@
         "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
         "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
         "src/interfaces/AaveInterface.sol",
-        "src/interfaces/ERC20Interface.sol"
+        "src/interfaces/ERC20Interface.sol",
+        "src/interfaces/NftfiInterface.sol"
       ],
       "versionRequirement": null,
       "artifacts": {
@@ -392,9 +393,49 @@
         }
       }
     },
+    "src/interfaces/NftfiInterface.sol": {
+      "lastModificationDate": 1684011027107,
+      "contentHash": "fc88b805718d6e59287809bc7e7f440a",
+      "sourceName": "src/interfaces/NftfiInterface.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": null,
+      "artifacts": {
+        "NftfiInterface": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "NftfiInterface.sol/NftfiInterface.json"
+        }
+      }
+    },
     "test/FlashLoan.t.sol": {
-      "lastModificationDate": 1684000588864,
-      "contentHash": "8b3ceb83a6069b7b6a226bab2c739d97",
+      "lastModificationDate": 1684014525846,
+      "contentHash": "93eaa977bd6d946046750a6fd00143be",
       "sourceName": "test/FlashLoan.t.sol",
       "solcConfig": {
         "settings": {
@@ -434,6 +475,7 @@
         "src/FlashLoan.sol",
         "src/interfaces/AaveInterface.sol",
         "src/interfaces/ERC20Interface.sol",
+        "src/interfaces/NftfiInterface.sol",
         "test/TestUtils.sol"
       ],
       "versionRequirement": "^0.8.13",
@@ -444,8 +486,8 @@
       }
     },
     "test/TestUtils.sol": {
-      "lastModificationDate": 1683927814452,
-      "contentHash": "c2917fed3c20a40e00dadd6c8f8b1def",
+      "lastModificationDate": 1684011165214,
+      "contentHash": "107cf018085a1c8f23b4d652f821c847",
       "sourceName": "test/TestUtils.sol",
       "solcConfig": {
         "settings": {

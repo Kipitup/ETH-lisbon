@@ -1,0 +1,615 @@
+{
+  "protocol": "seaport1.5",
+  "fulfillment_data": {
+    "transaction": {
+      "function": "matchAdvancedOrders(((address,address,(uint8,address,uint256,uint256,uint256)[],(uint8,address,uint256,uint256,uint256,address)[],uint8,uint256,uint256,bytes32,uint256,bytes32,uint256),uint120,uint120,bytes,bytes)[],(uint256,uint8,uint256,uint256,bytes32[])[],((uint256,uint256)[],(uint256,uint256)[])[],address)",
+      "chain": 5,
+      "to": "0x00000000000000adc04c56bf30ac9d3c0aaf14dc",
+      "value": 0,
+      "input_data": {
+        "orders": [
+          {
+            "parameters": {
+              "offerer": "0x2b59fd03d176afc335fa6d4fbcdf5cf48a6844fb",
+              "zone": "0x000000e7ec00e7b300774b00001314b8610022b8",
+              "offer": [
+                {
+                  "itemType": 1,
+                  "token": "0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6",
+                  "identifierOrCriteria": "0",
+                  "startAmount": "394800000000000",
+                  "endAmount": "394800000000000"
+                }
+              ],
+              "consideration": [
+                {
+                  "itemType": 4,
+                  "token": "0x28ba8af8c8730f4c39fb0ac9779372183fb4ead9",
+                  "identifierOrCriteria": "57161490217899450480853956716767002404728125626424327637097596800488147445606",
+                  "startAmount": "4",
+                  "endAmount": "4",
+                  "recipient": "0x2b59fd03d176afc335fa6d4fbcdf5cf48a6844fb"
+                },
+                {
+                  "itemType": 1,
+                  "token": "0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6",
+                  "identifierOrCriteria": "0",
+                  "startAmount": "9870000000000",
+                  "endAmount": "9870000000000",
+                  "recipient": "0x0000a26b00c1f0df003000390027140000faa719"
+                }
+              ],
+              "orderType": 3,
+              "startTime": "1683930495",
+              "endTime": "1684535283",
+              "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "salt": "24446860302761739304752683030156737591518664810215442929803217238718000171415",
+              "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+              "totalOriginalConsiderationItems": "2"
+            },
+            "numerator": 1,
+            "denominator": 4,
+            "signature": "0xec376257e1043df2118ee755d89f020143544f0dffe2942cb36d0f7e2acce3f879928155ed910eadf440d92b25a002942b1ccda574bb6ccf928ae6bff9d28c7a",
+            "extraData": "0x00ef13aac4dbcf336ed855a0ee4166117332501c7500000000645f53b0b2d0ec41129ea1bbbaeaa5381ce17356779d2a52a675736424a97caf310111ebfa617cb86303a805733a0f07365b646bcf04bb0e12dce997a1dc39059bbabfe9000000000000000000000000000000000000000000000000000000000000000070"
+          },
+          {
+            "parameters": {
+              "offerer": "0xef13aac4dbcf336ed855a0ee4166117332501c75",
+              "zone": "0x0000000000000000000000000000000000000000",
+              "offer": [
+                {
+                  "itemType": 2,
+                  "token": "0x28ba8af8c8730f4c39fb0ac9779372183fb4ead9",
+                  "identifierOrCriteria": "112",
+                  "startAmount": "1",
+                  "endAmount": "1"
+                }
+              ],
+              "consideration": [
+                {
+                  "itemType": 1,
+                  "token": "0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6",
+                  "identifierOrCriteria": "0",
+                  "startAmount": "96232500000000",
+                  "endAmount": "96232500000000",
+                  "recipient": "0xef13aac4dbcf336ed855a0ee4166117332501c75"
+                }
+              ],
+              "orderType": 1,
+              "startTime": "1683930495",
+              "endTime": "1684535283",
+              "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+              "salt": "24446860302761739304752683030156737591518664810215442929807854270697154282070",
+              "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+              "totalOriginalConsiderationItems": "1"
+            },
+            "numerator": 1,
+            "denominator": 1,
+            "signature": "0x",
+            "extraData": "0x"
+          }
+        ],
+        "criteriaResolvers": [
+          {
+            "orderIndex": "0",
+            "side": 1,
+            "index": "0",
+            "identifier": "112",
+            "criteriaProof": [
+              "0x8ff97419363ffd7000167f130ef7168fbea05faf9251824ca5043f113cc6a7c7",
+              "0x8305089376db08acd4dc6f99bfa604211c2ec3d2e9b8bad3de92e5c972763715",
+              "0xbd347525f4707c16b92376d95a4a373aa8831b3df019560cc0fa77f283b55eb8",
+              "0x2bf74f14ea6410551d07ade842926e8de66f00b77254fccd5a53846b3b430f7a",
+              "0x784bf3b1ac1b49dae27d8681817223970ff76a61b868261c69c1280ff12a102d",
+              "0xf12e2938ec113f4d3755ac4f5a7eced6d00f0d38d968694998177b5e55e502ae",
+              "0x0383906b61a405351895b750adcf4de8940dcf5da9512f0ee97c0b5a05f2a3b2",
+              "0x1c073b349dbe1619bdef6b297900a51dbbb25993a4284d22bc0bc4aead997082",
+              "0x33edea56c6e7d9c5c9a6613b37f755c2ef472b41ca83fbe68e6950300b262e43"
+            ]
+          }
+        ],
+        "fulfillments": [
+          {
+            "offerComponents": [
+              {
+                "orderIndex": "1",
+                "itemIndex": "0"
+              }
+            ],
+            "considerationComponents": [
+              {
+                "orderIndex": "0",
+                "itemIndex": "0"
+              }
+            ]
+          },
+          {
+            "offerComponents": [
+              {
+                "orderIndex": "0",
+                "itemIndex": "0"
+              }
+            ],
+            "considerationComponents": [
+              {
+                "orderIndex": "0",
+                "itemIndex": "1"
+              }
+            ]
+          },
+          {
+            "offerComponents": [
+              {
+                "orderIndex": "0",
+                "itemIndex": "0"
+              }
+            ],
+            "considerationComponents": [
+              {
+                "orderIndex": "1",
+                "itemIndex": "0"
+              }
+            ]
+          }
+        ],
+        "recipient": "0xef13aac4dbcf336ed855a0ee4166117332501c75"
+      }
+    },
+    "orders": [
+      {
+        "parameters": {
+          "offerer": "0x2b59fd03d176afc335fa6d4fbcdf5cf48a6844fb",
+          "offer": [
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "394800000000000",
+              "endAmount": "394800000000000"
+            }
+          ],
+          "consideration": [
+            {
+              "itemType": 4,
+              "token": "0x28Ba8AF8C8730F4C39fb0Ac9779372183Fb4EAD9",
+              "identifierOrCriteria": "57161490217899450480853956716767002404728125626424327637097596800488147445606",
+              "startAmount": "4",
+              "endAmount": "4",
+              "recipient": "0x2B59FD03d176aFC335Fa6D4FBCDf5cF48a6844FB"
+            },
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "9870000000000",
+              "endAmount": "9870000000000",
+              "recipient": "0x0000a26b00c1F0DF003000390027140000fAa719"
+            }
+          ],
+          "startTime": "1683930495",
+          "endTime": "1684535283",
+          "orderType": 3,
+          "zone": "0x000000e7Ec00e7B300774b00001314B8610022b8",
+          "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "salt": "0x360c6ebe000000000000000000000000000000000000000027565876cd288997",
+          "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+          "totalOriginalConsiderationItems": 2,
+          "counter": 0
+        },
+        "signature": "0xec376257e1043df2118ee755d89f020143544f0dffe2942cb36d0f7e2acce3f879928155ed910eadf440d92b25a002942b1ccda574bb6ccf928ae6bff9d28c7a"
+      }
+    ]
+  }
+}
+
+
+
+
+{
+  "next": null,
+  "previous": null,
+  "orders": [
+    {
+      "created_date": "2023-05-13T19:10:37.481942",
+      "closing_date": "2023-05-16T19:10:11",
+      "listing_time": 1684005030,
+      "expiration_time": 1684264211,
+      "order_hash": "0x0662f152b64a0b22fa348c70f766f66dea55bfc6a0d9a559f7a5e35e3bdcd019",
+      "protocol_data": {
+        "parameters": {
+          "offerer": "0x04c1b9b656ae90dcff5d363884c1d812d6790f9a",
+          "offer": [
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "20000000000000000",
+              "endAmount": "20000000000000000"
+            }
+          ],
+          "consideration": [
+            {
+              "itemType": 2,
+              "token": "0xf5de760f2e916647fd766B4AD9E85ff943cE3A2b",
+              "identifierOrCriteria": "2756267",
+              "startAmount": "1",
+              "endAmount": "1",
+              "recipient": "0x04c1b9B656Ae90DcFF5D363884c1D812D6790F9a"
+            },
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "500000000000000",
+              "endAmount": "500000000000000",
+              "recipient": "0x0000a26b00c1F0DF003000390027140000fAa719"
+            }
+          ],
+          "startTime": "1684005030",
+          "endTime": "1684264211",
+          "orderType": 0,
+          "zone": "0x004C00500000aD104D7DBd00e3ae0A5C00560C00",
+          "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "salt": "0x360c6ebe0000000000000000000000000000000000000000d2ed38e7bb88abe6",
+          "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+          "totalOriginalConsiderationItems": 2,
+          "counter": 0
+        },
+        "signature": null
+      },
+      "protocol_address": "0x00000000000000adc04c56bf30ac9d3c0aaf14dc",
+      "current_price": "20000000000000000",
+      "maker": {
+        "user": 446300,
+        "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/1.png",
+        "address": "0x04c1b9b656ae90dcff5d363884c1d812d6790f9a",
+        "config": ""
+      },
+      "taker": null,
+      "maker_fees": [],
+      "taker_fees": [
+        {
+          "account": {
+            "user": null,
+            "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/29.png",
+            "address": "0x0000a26b00c1f0df003000390027140000faa719",
+            "config": ""
+          },
+          "basis_points": "250"
+        }
+      ],
+      "side": "bid",
+      "order_type": "basic",
+      "cancelled": false,
+      "finalized": false,
+      "marked_invalid": false,
+      "remaining_quantity": 1,
+      "relay_id": "T3JkZXJWMlR5cGU6MTE2NzExNg",
+      "criteria_proof": null,
+      "maker_asset_bundle": {
+        "assets": [
+          {
+            "id": 1507152,
+            "token_id": "0",
+            "num_sales": 4,
+            "background_color": null,
+            "image_url": "https://openseauserdata.com/files/accae6b6fb3888cbff27a013729c22dc.svg",
+            "image_preview_url": "https://openseauserdata.com/files/accae6b6fb3888cbff27a013729c22dc.svg",
+            "image_thumbnail_url": "https://openseauserdata.com/files/accae6b6fb3888cbff27a013729c22dc.svg",
+            "image_original_url": "https://openseauserdata.com/files/accae6b6fb3888cbff27a013729c22dc.svg",
+            "animation_url": null,
+            "animation_original_url": null,
+            "name": "Wrapped Ether",
+            "description": null,
+            "external_link": null,
+            "asset_contract": {
+              "address": "0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6",
+              "asset_contract_type": "fungible",
+              "chain_identifier": "goerli",
+              "created_date": "2021-03-12T14:51:07.318309",
+              "name": "Wrapped Ether",
+              "nft_version": null,
+              "opensea_version": null,
+              "owner": null,
+              "schema_name": "ERC20",
+              "symbol": "WETH",
+              "total_supply": null,
+              "description": null,
+              "external_link": null,
+              "image_url": null,
+              "default_to_fiat": false,
+              "dev_buyer_fee_basis_points": 0,
+              "dev_seller_fee_basis_points": 0,
+              "only_proxied_transfers": false,
+              "opensea_buyer_fee_basis_points": 0,
+              "opensea_seller_fee_basis_points": 250,
+              "buyer_fee_basis_points": 0,
+              "seller_fee_basis_points": 250,
+              "payout_address": null
+            },
+            "permalink": "https://testnets.opensea.io/assets/goerli/0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6/0",
+            "collection": {
+              "banner_image_url": null,
+              "chat_url": null,
+              "created_date": "2022-08-05T17:12:11.501958+00:00",
+              "default_to_fiat": false,
+              "description": null,
+              "dev_buyer_fee_basis_points": "0",
+              "dev_seller_fee_basis_points": "0",
+              "discord_url": null,
+              "display_data": {
+                "card_display_style": "contain",
+                "images": []
+              },
+              "external_url": null,
+              "featured": false,
+              "featured_image_url": null,
+              "hidden": true,
+              "safelist_request_status": "not_requested",
+              "image_url": null,
+              "is_subject_to_whitelist": false,
+              "large_image_url": null,
+              "medium_username": null,
+              "name": "OpenSea PaymentAssets",
+              "only_proxied_transfers": false,
+              "opensea_buyer_fee_basis_points": "0",
+              "opensea_seller_fee_basis_points": 250,
+              "payout_address": null,
+              "require_email": false,
+              "short_description": null,
+              "slug": "opensea-paymentassets",
+              "telegram_url": null,
+              "twitter_username": null,
+              "instagram_username": null,
+              "wiki_url": null,
+              "is_nsfw": false,
+              "fees": {
+                "seller_fees": {},
+                "opensea_fees": {
+                  "0x0000a26b00c1f0df003000390027140000faa719": 250
+                }
+              },
+              "is_rarity_enabled": false,
+              "is_creator_fees_enforced": true
+            },
+            "decimals": 18,
+            "token_metadata": null,
+            "is_nsfw": false,
+            "owner": null
+          }
+        ],
+        "maker": null,
+        "slug": null,
+        "name": null,
+        "description": null,
+        "external_link": null,
+        "asset_contract": null,
+        "permalink": null,
+        "seaport_sell_orders": null
+      },
+      "taker_asset_bundle": {
+        "assets": [
+          {
+            "id": 169364636,
+            "token_id": "2756267",
+            "num_sales": 0,
+            "background_color": null,
+            "image_url": "https://i.seadn.io/gcs/files/b4d419a67bc7dc52000e6d1336b24c46.png?w=500&auto=format",
+            "image_preview_url": "https://i.seadn.io/gcs/files/b4d419a67bc7dc52000e6d1336b24c46.png?w=500&auto=format",
+            "image_thumbnail_url": "https://i.seadn.io/gcs/files/b4d419a67bc7dc52000e6d1336b24c46.png?w=500&auto=format",
+            "image_original_url": "ipfs://bafybeifvwitulq6elvka2hoqhwixfhgb42l4aiukmtrw335osetikviuuu",
+            "animation_url": null,
+            "animation_original_url": null,
+            "name": "MultiFaucet Test NFT",
+            "description": "A test NFT dispensed from faucet.paradigm.xyz.",
+            "external_link": null,
+            "asset_contract": {
+              "address": "0xf5de760f2e916647fd766b4ad9e85ff943ce3a2b",
+              "asset_contract_type": "non-fungible",
+              "chain_identifier": "goerli",
+              "created_date": "2021-11-20T18:57:09.139283",
+              "name": "MultiFaucet NFT",
+              "nft_version": null,
+              "opensea_version": null,
+              "owner": null,
+              "schema_name": "ERC721",
+              "symbol": "MFNFT",
+              "total_supply": null,
+              "description": null,
+              "external_link": null,
+              "image_url": null,
+              "default_to_fiat": false,
+              "dev_buyer_fee_basis_points": 0,
+              "dev_seller_fee_basis_points": 0,
+              "only_proxied_transfers": false,
+              "opensea_buyer_fee_basis_points": 0,
+              "opensea_seller_fee_basis_points": 250,
+              "buyer_fee_basis_points": 0,
+              "seller_fee_basis_points": 250,
+              "payout_address": null
+            },
+            "permalink": "https://testnets.opensea.io/assets/goerli/0xf5de760f2e916647fd766b4ad9e85ff943ce3a2b/2756267",
+            "collection": {
+              "banner_image_url": null,
+              "chat_url": null,
+              "created_date": "2021-11-20T18:57:09.305241+00:00",
+              "default_to_fiat": false,
+              "description": null,
+              "dev_buyer_fee_basis_points": "0",
+              "dev_seller_fee_basis_points": "0",
+              "discord_url": null,
+              "display_data": {
+                "card_display_style": "contain",
+                "images": []
+              },
+              "external_url": null,
+              "featured": false,
+              "featured_image_url": null,
+              "hidden": false,
+              "safelist_request_status": "not_requested",
+              "image_url": null,
+              "is_subject_to_whitelist": false,
+              "large_image_url": null,
+              "medium_username": null,
+              "name": "MultiFaucet NFT V3",
+              "only_proxied_transfers": false,
+              "opensea_buyer_fee_basis_points": "0",
+              "opensea_seller_fee_basis_points": 250,
+              "payout_address": null,
+              "require_email": false,
+              "short_description": null,
+              "slug": "multifaucet-nft-v3",
+              "telegram_url": null,
+              "twitter_username": null,
+              "instagram_username": null,
+              "wiki_url": null,
+              "is_nsfw": false,
+              "fees": {
+                "seller_fees": {},
+                "opensea_fees": {
+                  "0x0000a26b00c1f0df003000390027140000faa719": 250
+                }
+              },
+              "is_rarity_enabled": false,
+              "is_creator_fees_enforced": false
+            },
+            "decimals": null,
+            "token_metadata": "https://ipfs.io/ipfs/bafybeiezeds576kygarlq672cnjtimbsrspx5b3tr3gct2lhqud6abjgiu",
+            "is_nsfw": false,
+            "owner": null
+          }
+        ],
+        "maker": null,
+        "slug": null,
+        "name": null,
+        "description": null,
+        "external_link": null,
+        "asset_contract": null,
+        "permalink": null,
+        "seaport_sell_orders": null
+      }
+    }
+  ]
+}
+
+
+
+
+
+
+{
+  "offers": [
+    {
+      "order_hash": "0xe5f19ada1d910d2b1fbe76bee9ff57542b58a5f7c01c7ba02550967785bb4d9b",
+      "chain": "goerli",
+      "criteria": {
+        "collection": {
+          "slug": "cyan-numbers"
+        },
+        "contract": {
+          "address": "0x28ba8af8c8730f4c39fb0ac9779372183fb4ead9"
+        },
+        "trait": null
+      },
+      "protocol_data": {
+        "parameters": {
+          "offerer": "0x2b59fd03d176afc335fa6d4fbcdf5cf48a6844fb",
+          "offer": [
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "200000000000000",
+              "endAmount": "200000000000000"
+            }
+          ],
+          "consideration": [
+            {
+              "itemType": 4,
+              "token": "0x28Ba8AF8C8730F4C39fb0Ac9779372183Fb4EAD9",
+              "identifierOrCriteria": "57161490217899450480853956716767002404728125626424327637097596800488147445606",
+              "startAmount": "1",
+              "endAmount": "1",
+              "recipient": "0x2B59FD03d176aFC335Fa6D4FBCDf5cF48a6844FB"
+            },
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "5000000000000",
+              "endAmount": "5000000000000",
+              "recipient": "0x0000a26b00c1F0DF003000390027140000fAa719"
+            }
+          ],
+          "startTime": "1683932666",
+          "endTime": "1684537431",
+          "orderType": 2,
+          "zone": "0x000000e7Ec00e7B300774b00001314B8610022b8",
+          "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "salt": "0x360c6ebe0000000000000000000000000000000000000000b2c9ede34364b641",
+          "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+          "totalOriginalConsiderationItems": 2,
+          "counter": 0
+        },
+        "signature": null
+      },
+      "protocol_address": "0x00000000000000adc04c56bf30ac9d3c0aaf14dc"
+    },
+    {
+      "order_hash": "0xc1f96e078e30c9796e2ff47360cfb22c61d2671b188cd666fdf7899e707ac102",
+      "chain": "goerli",
+      "criteria": {
+        "collection": {
+          "slug": "cyan-numbers"
+        },
+        "contract": {
+          "address": "0x28ba8af8c8730f4c39fb0ac9779372183fb4ead9"
+        },
+        "trait": null
+      },
+      "protocol_data": {
+        "parameters": {
+          "offerer": "0x2b59fd03d176afc335fa6d4fbcdf5cf48a6844fb",
+          "offer": [
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "394800000000000",
+              "endAmount": "394800000000000"
+            }
+          ],
+          "consideration": [
+            {
+              "itemType": 4,
+              "token": "0x28Ba8AF8C8730F4C39fb0Ac9779372183Fb4EAD9",
+              "identifierOrCriteria": "57161490217899450480853956716767002404728125626424327637097596800488147445606",
+              "startAmount": "4",
+              "endAmount": "4",
+              "recipient": "0x2B59FD03d176aFC335Fa6D4FBCDf5cF48a6844FB"
+            },
+            {
+              "itemType": 1,
+              "token": "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
+              "identifierOrCriteria": "0",
+              "startAmount": "9870000000000",
+              "endAmount": "9870000000000",
+              "recipient": "0x0000a26b00c1F0DF003000390027140000fAa719"
+            }
+          ],
+          "startTime": "1683930495",
+          "endTime": "1684535283",
+          "orderType": 3,
+          "zone": "0x000000e7Ec00e7B300774b00001314B8610022b8",
+          "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "salt": "0x360c6ebe000000000000000000000000000000000000000027565876cd288997",
+          "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
+          "totalOriginalConsiderationItems": 2,
+          "counter": 0
+        },
+        "signature": null
+      },
+      "protocol_address": "0x00000000000000adc04c56bf30ac9d3c0aaf14dc"
+    },
+  ]
+}

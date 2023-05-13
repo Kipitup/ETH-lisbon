@@ -16,14 +16,12 @@ const walletClient = createWalletClient({
 
 async function sendTransaction({ orderData, seller }) {
   try {
+    console.log(orderData.fulfillment_data.transaction)
     const data = encodeFunctionData({
       abi: openseaGoerliABI,
-      functionName: 'matchAdvancedOrders',
+      functionName: 'fulfillBasicOrder_efficient_6GL6yc',
       args: [
-        orderData.fulfillment_data.transaction.input_data.orders,
-        orderData.fulfillment_data.transaction.input_data.criteriaResolvers,
-        orderData.fulfillment_data.transaction.input_data.fulfillments,
-        seller
+        orderData.fulfillment_data.transaction.input_data.parameters
       ]
     })
 
@@ -34,9 +32,10 @@ async function sendTransaction({ orderData, seller }) {
       chainId: orderData.fulfillment_data.transaction.chain // The network ID (5 for Goerli in this case)
     };
 
-    const hash = await walletClient.sendTransaction(transaction)
+    console.log(transaction)
+    // const hash = await walletClient.sendTransaction(transaction)
 
-    console.log(hash)
+    // console.log(hash)
 
   } catch (error) {
     console.error("sending tx: ", error)
@@ -45,7 +44,7 @@ async function sendTransaction({ orderData, seller }) {
 
 async function getBestOfferAndFulfill({ seller, nftAddress, tokenId, collectionSlug }) {
   // Fetch collection offers
-  const offersResponse = await fetch(`https://testnets-api.opensea.io/v2/offers/collection/${collectionSlug}`, {
+  const offersResponse = await fetch(`https://testnets-api.opensea.io/v2/orders/goerli/seaport/offers?asset_contract_address=${nftAddress}&token_ids=${tokenId}`, {
     method: 'GET',
     headers: {
       'Accept': 'application/json'
@@ -58,13 +57,14 @@ async function getBestOfferAndFulfill({ seller, nftAddress, tokenId, collectionS
   let maxAmount = new BigNumber(0);
 
   // Iterate over offers to find the best one
-  for (const offer of offersData.offers) {
-    const currentOfferAmount = new BigNumber(offer.protocol_data.parameters.offer[0].startAmount);
-    console.log(currentOfferAmount)
+  for (const offer of offersData.orders) {
+    if (offer.side === "bid") {
+      const currentOfferAmount = new BigNumber(offer.protocol_data.parameters.offer[0].startAmount);
 
-    if (currentOfferAmount.gt(maxAmount)) {
-      maxAmount = currentOfferAmount;
-      bestOffer = offer;
+      if (currentOfferAmount.gt(maxAmount)) {
+        maxAmount = currentOfferAmount;
+        bestOffer = offer;
+      }
     }
   }
 
@@ -82,7 +82,7 @@ async function getBestOfferAndFulfill({ seller, nftAddress, tokenId, collectionS
   const fulfillmentData = {
     offer: {
       hash: bestOffer.order_hash,
-      chain: bestOffer.chain,
+      chain: "goerli",
       protocol_address: bestOffer.protocol_address
     },
     fulfiller: {
@@ -94,6 +94,8 @@ async function getBestOfferAndFulfill({ seller, nftAddress, tokenId, collectionS
     }
   };
 
+  console.log(fulfillmentData)
+
   const fulfillmentResponse = await fetch('https://testnets-api.opensea.io/v2/offers/fulfillment_data', {
     method: 'POST',
     headers: {
@@ -103,7 +105,11 @@ async function getBestOfferAndFulfill({ seller, nftAddress, tokenId, collectionS
   });
 
   const fulfillmentDataResponse = await fulfillmentResponse.json();
-  console.log('Fulfillment response:', fulfillmentDataResponse);
+  if (fulfillmentDataResponse.errors) {
+    console.log('Fulfillment response:', fulfillmentDataResponse.errors[0]);
+  } else {
+    console.log('Fulfillment response:', fulfillmentDataResponse);
+  }
   return fulfillmentDataResponse
 }
 
@@ -111,9 +117,9 @@ async function main(seller) {
   try {
     const orderData = await getBestOfferAndFulfill({
       seller,
-      nftAddress: '0x28Ba8AF8C8730F4C39fb0Ac9779372183Fb4EAD9',
-      tokenId: '112',
-      collectionSlug: 'cyan-numbers'
+      nftAddress: '0xf5de760f2e916647fd766B4AD9E85ff943cE3A2b',
+      tokenId: '2756267',
+      collectionSlug: 'multifaucet-nft-v3'
     });
 
     sendTransaction({ orderData, seller })
@@ -124,102 +130,3 @@ async function main(seller) {
 }
 
 main('0x04c1b9B656Ae90DcFF5D363884c1D812D6790F9a')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// unused - keep for later
-async function makeOffer({ nftAddress, offerer, amount, currency }) {
-  const platformFee = parseInt(amount) * 0.025
-
-  const order_parameters = {
-    "offerer": offerer,
-    "offer": [
-      {
-        "itemType": 1,
-        "token": currency,
-        "identifierOrCriteria": "0",
-        "startAmount": parseEther(amount),
-        "endAmount": parseEther(amount)
-      }
-    ],
-    "consideration": [
-      {
-        "itemType": 4,
-        "token": nftAddress,
-        "identifierOrCriteria": "0",
-        "startAmount": "1",
-        "endAmount": "1",
-        "recipient": offerer
-      },
-      {
-        "itemType": 1,
-        "token": currency,
-        "identifierOrCriteria": "0",
-        "startAmount": platformFee.toString(),
-        "endAmount": platformFee.toString(),
-        "recipient": "0x0000a26b00c1F0DF003000390027140000fAa719"
-      }
-    ],
-    "startTime": Math.floor(Date.now() / 1000).toString(),
-    "endTime": Math.floor((Date.now() / 1000) + (7 * 24 * 60 * 60)).toString(),
-    "orderType": 2,
-    "zone": "0x000000e7Ec00e7B300774b00001314B8610022b8",
-    "zoneHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "salt1": numberToHex(Math.floor(Math.random() * 99999999999999), { size: 32 }),
-    "conduitKey": "0x0000007b02230091a7ed01230072f7006a004d60a8d4e71d599b8104250f0000",
-    "totalOriginalConsiderationItems": 2,
-    "counter": 0
-  }
-
-  const signature = await walletClient.signTypedData({
-    account: walletClient.account.address,
-    domain: {
-      name: "Open sea",
-      versionId: 1,
-      chainId: 5,
-      verifyingContract: '0x00000000000000adc04c56bf30ac9d3c0aaf14dc'
-    },
-    types: {
-      // too complicated
-    },
-    message: order_parameters
-  });
-
-  const protocol_address = "0x00000000000000ADc04C56Bf30aC9d3c0aAF14dC";
-
-  const response = await fetch('https://testnets-api.opensea.io/v2/orders/goerli/seaport/offers', {
-    method: 'POST',
-    headers: {
-      'accept': 'application/json',
-      'content-type': 'application/json'
-    },
-    body: JSON.stringify({
-      order_parameters,
-      signature,
-      protocol_address,
-    }),
-  });
-
-  const data = await response.json();
-
-  return data;
-}

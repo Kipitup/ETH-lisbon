@@ -117,7 +117,7 @@ contract FlashLoanTest is Test, TestUtils {
     //     console.log("Swapped %s for %s", b, WETH);
     // }
 
-    // function testPayBackLoan() public {
-    //     flashLoan.payBackLoan(2000);
-    // }
+    function testPayBackLoan() public {
+        flashLoan.payBackLoan(2000);
+    }
 }

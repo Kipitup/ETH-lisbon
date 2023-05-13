@@ -264,8 +264,8 @@
       }
     },
     "src/FlashLoan.sol": {
-      "lastModificationDate": 1684012875823,
-      "contentHash": "0735000dc768eac2d7d70229603b7b81",
+      "lastModificationDate": 1684020058773,
+      "contentHash": "4a53044bf81a158ce275e30f47b85c74",
       "sourceName": "src/FlashLoan.sol",
       "solcConfig": {
         "settings": {
@@ -304,6 +304,8 @@
         "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
         "src/interfaces/AaveInterface.sol",
         "src/interfaces/ERC20Interface.sol",
+        "src/interfaces/IERC165.sol",
+        "src/interfaces/IERC721.sol",
         "src/interfaces/NftfiInterface.sol"
       ],
       "versionRequirement": null,
@@ -393,6 +395,88 @@
         }
       }
     },
+    "src/interfaces/IERC165.sol": {
+      "lastModificationDate": 1684018973185,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "src/interfaces/IERC165.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC165": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC165.sol/IERC165.json"
+        }
+      }
+    },
+    "src/interfaces/IERC721.sol": {
+      "lastModificationDate": 1684019000590,
+      "contentHash": "40a90c0d61be9563b1af681bb18c9021",
+      "sourceName": "src/interfaces/IERC721.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "src/interfaces/IERC165.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IERC721": {
+          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC721.sol/IERC721.json"
+        }
+      }
+    },
     "src/interfaces/NftfiInterface.sol": {
       "lastModificationDate": 1684011027107,
       "contentHash": "fc88b805718d6e59287809bc7e7f440a",
@@ -434,8 +518,8 @@
       }
     },
     "test/FlashLoan.t.sol": {
-      "lastModificationDate": 1684016777897,
-      "contentHash": "41b2f8c3d50dd334a382488035fc46b1",
+      "lastModificationDate": 1684019777337,
+      "contentHash": "59034d0625f70594dfd996e3a7619f78",
       "sourceName": "test/FlashLoan.t.sol",
       "solcConfig": {
         "settings": {
@@ -475,6 +559,8 @@
         "src/FlashLoan.sol",
         "src/interfaces/AaveInterface.sol",
         "src/interfaces/ERC20Interface.sol",
+        "src/interfaces/IERC165.sol",
+        "src/interfaces/IERC721.sol",
         "src/interfaces/NftfiInterface.sol",
         "test/TestUtils.sol"
       ],

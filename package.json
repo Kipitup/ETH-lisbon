@@ -40,6 +40,7 @@
 		"jwt-decode": "^3.1.2",
 		"moment": "^2.29.4",
 		"next": "13.0.7",
+		"opensea-js": "^5.0.0",
 		"prettier-plugin-tailwindcss": "^0.2.6",
 		"react": "18.2.0",
 		"react-chartjs-2": "^5.2.0",

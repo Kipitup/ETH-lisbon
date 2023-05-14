@@ -69,9 +69,15 @@ contract FlashLoanTest is Test, TestUtils {
 		require(liquidity > 0, 'Liquidity is zero');
 	}
 
+<<<<<<< HEAD
 	// function testSellMyNFT() public {
 	// 	flashLoan.sellMyNFT();
 	// }
+=======
+    // function testSellMyNFT() public {
+    //     flashLoan.sellMyNFT();
+    // }
+>>>>>>> a523f65a3a63852c6fb663bf30d5477956df18f2
 
 	// function testSellNFT() public {
 	// 	(bool success, ) = SEAPORT.call{value: 0}(

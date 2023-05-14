@@ -1,0 +1,62 @@
+specVersion: 0.0.5
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: DirectLoanFixedOfferRedeploy
+    network: mainnet
+    source:
+      address: "0x8252Df1d8b29057d1Afe3062bf5a64D503152BC8"
+      abi: DirectLoanFixedOfferRedeploy
+      startBlock: 15747078
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - LoanLiquidated
+        - LoanRepaid
+        - LoanStarted
+      abis:
+        - name: DirectLoanFixedOfferRedeploy
+          file: ./abis/DirectLoanFixedOfferRedeploy.json
+      eventHandlers:
+        - event: LoanLiquidated(indexed uint32,indexed address,indexed
+            address,uint256,uint256,uint256,uint256,address)
+          handler: handleLoanLiquidated
+        - event: LoanRepaid(indexed uint32,indexed address,indexed
+            address,uint256,uint256,uint256,uint256,uint256,address,address,address)
+          handler: handleLoanRepaid
+        - event: LoanStarted(indexed uint32,indexed address,indexed
+            address,(uint256,uint256,uint256,address,uint32,uint16,uint16,address,uint64,address,address),(address,uint16,uint16))
+          handler: handleLoanStarted
+      file: ./src/nftfi.ts
+  - kind: ethereum
+    name: XY3V2
+    network: mainnet
+    source:
+      address: "0xFa4D5258804D7723eb6A934c11b1bd423bC31623"
+      abi: XY3V2
+      startBlock: 16523600
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - LoanLiquidated
+        - LoanRepaid
+        - LoanStarted
+      abis:
+        - name: XY3V2
+          file: ./abis/XY3V2.json
+      eventHandlers:
+        - event: LoanLiquidated(indexed uint32,indexed address,indexed
+            address,uint256,uint256,uint256,uint256,address)
+          handler: handleLoanLiquidated
+        - event: LoanRepaid(indexed uint32,indexed address,indexed
+            address,uint256,uint256,uint256,uint256,address,address)
+          handler: handleLoanRepaid
+        - event: LoanStarted(indexed uint32,indexed address,indexed
+            address,uint256,(uint256,uint256,uint256,address,uint32,uint16,uint64,address,bool),address,bytes4)
+          handler: handleLoanStarted
+      file: ./src/x2y2.ts

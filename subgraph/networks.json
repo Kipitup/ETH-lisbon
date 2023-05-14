@@ -1,0 +1,11 @@
+{
+  "mainnet": {
+    "DirectLoanFixedOfferRedeploy": {
+      "address": "0x8252Df1d8b29057d1Afe3062bf5a64D503152BC8",
+      "startBlock": 15747078
+    },
+    "Contract": {
+      "address": "0xFa4D5258804D7723eb6A934c11b1bd423bC31623"
+    }
+  }
+}

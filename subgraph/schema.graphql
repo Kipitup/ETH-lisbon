@@ -1,0 +1,290 @@
+type Loan @entity {
+  id: String!
+  loanId: BigInt! # uint32
+  borrower: Bytes! # address
+  lender: Bytes # address
+  borrowAmount: BigInt! # uint256
+  repayAmount: BigInt! # uint256
+  nftTokenId: BigInt! # uint256
+  borrowAsset: Bytes!
+  loanDuration: BigInt # uint32
+  loanStart: BigInt! # uint64
+  nftAsset: Bytes! # address
+  dapp: Dapp!
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  status: LoanStatus!
+  transactionHash: Bytes!
+}
+
+enum Dapp {
+  nftfi
+  x2y2
+}
+
+enum LoanStatus {
+  active
+  repaid
+  liquidated
+}type AdminFeeReceiverUpdated @entity(immutable: true) {
+  id: Bytes!
+  param0: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type AdminFeeUpdated @entity(immutable: true) {
+  id: Bytes!
+  newAdminFee: Int! # uint16
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type AgentPermit @entity(immutable: true) {
+  id: Bytes!
+  agent: Bytes! # address
+  selector: Bytes! # bytes4
+  isPermitted: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type BorrowRefferal @entity(immutable: true) {
+  id: Bytes!
+  loanId: BigInt! # uint32
+  borrower: Bytes! # address
+  referral: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ERC20Approve @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  erc20Contract: Bytes! # address
+  amount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ERC20Permit @entity(immutable: true) {
+  id: Bytes!
+  erc20Contract: Bytes! # address
+  isPermitted: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ERC721Approve @entity(immutable: true) {
+  id: Bytes!
+  user: Bytes! # address
+  erc721Contract: Bytes! # address
+  isPermitted: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ERC721Permit @entity(immutable: true) {
+  id: Bytes!
+  erc721Contract: Bytes! # address
+  isPermitted: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ExecuteInterceptor @entity(immutable: true) {
+  id: Bytes!
+  queueId: BigInt! # uint256
+  nftAsset: Bytes! # address
+  tokenId: BigInt! # uint256
+  interceptor: Bytes! # address
+  before: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type FlashExecute @entity(immutable: true) {
+  id: Bytes!
+  loanId: BigInt! # uint32
+  nft: Bytes! # address
+  nftTokenId: BigInt! # uint256
+  flashTarget: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ContractLoanLiquidated @entity(immutable: true) {
+  id: Bytes!
+  loanId: BigInt! # uint32
+  borrower: Bytes! # address
+  lender: Bytes! # address
+  borrowAmount: BigInt! # uint256
+  nftTokenId: BigInt! # uint256
+  loanMaturityDate: BigInt! # uint256
+  loanLiquidationDate: BigInt! # uint256
+  nftAsset: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ContractLoanRepaid @entity(immutable: true) {
+  id: Bytes!
+  loanId: BigInt! # uint32
+  borrower: Bytes! # address
+  lender: Bytes! # address
+  borrowAmount: BigInt! # uint256
+  nftTokenId: BigInt! # uint256
+  repayAmount: BigInt! # uint256
+  adminFee: BigInt! # uint256
+  nftAsset: Bytes! # address
+  borrowAsset: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ContractLoanStarted @entity(immutable: true) {
+  id: Bytes!
+  loanId: BigInt! # uint32
+  borrower: Bytes! # address
+  lender: Bytes! # address
+  nonce: BigInt! # uint256
+  loanDetail_borrowAmount: BigInt! # uint256
+  loanDetail_repayAmount: BigInt! # uint256
+  loanDetail_nftTokenId: BigInt! # uint256
+  loanDetail_borrowAsset: Bytes! # address
+  loanDetail_loanDuration: BigInt! # uint32
+  loanDetail_adminShare: Int! # uint16
+  loanDetail_loanStart: BigInt! # uint64
+  loanDetail_nftAsset: Bytes! # address
+  loanDetail_isCollection: Boolean! # bool
+  target: Bytes! # address
+  selector: Bytes! # bytes4
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type MaxBorrowDurationUpdated @entity(immutable: true) {
+  id: Bytes!
+  newMaxBorrowDuration: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type MinBorrowDurationUpdated @entity(immutable: true) {
+  id: Bytes!
+  newMinBorrowDuration: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type NonceCancelled @entity(immutable: true) {
+  id: Bytes!
+  lender: Bytes! # address
+  nonce: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Paused @entity(immutable: true) {
+  id: Bytes!
+  account: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RoleAdminChanged @entity(immutable: true) {
+  id: Bytes!
+  role: Bytes! # bytes32
+  previousAdminRole: Bytes! # bytes32
+  newAdminRole: Bytes! # bytes32
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RoleGranted @entity(immutable: true) {
+  id: Bytes!
+  role: Bytes! # bytes32
+  account: Bytes! # address
+  sender: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RoleRevoked @entity(immutable: true) {
+  id: Bytes!
+  role: Bytes! # bytes32
+  account: Bytes! # address
+  sender: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type ServiceFee @entity(immutable: true) {
+  id: Bytes!
+  loanId: BigInt! # uint32
+  target: Bytes! # address
+  serviceFeeRate: Int! # uint16
+  feeAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TimeStampCancelled @entity(immutable: true) {
+  id: Bytes!
+  lender: Bytes! # address
+  timestamp: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type Unpaused @entity(immutable: true) {
+  id: Bytes!
+  account: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type UpdageInterceptor @entity(immutable: true) {
+  id: Bytes!
+  queueId: BigInt! # uint256
+  nftAsset: Bytes! # address
+  tokenId: BigInt! # uint256
+  interceptor: Bytes! # address
+  add: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type UpdateStatus @entity(immutable: true) {
+  id: Bytes!
+  loanId: BigInt! # uint32
+  xy3NftId: BigInt! # uint64
+  newStatus: Int! # uint8
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}

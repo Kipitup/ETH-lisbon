@@ -158,17 +158,17 @@
   },
   "ast": {
     "absolutePath": "src/interfaces/AaveInterface.sol",
-    "id": 12359,
+    "id": 12465,
     "exportedSymbols": {
       "AaveInterface": [
-        12358
+        12464
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:313:7",
     "nodes": [
       {
-        "id": 12339,
+        "id": 12445,
         "nodeType": "PragmaDirective",
         "src": "32:25:7",
         "nodes": [],
@@ -180,12 +180,12 @@
         ]
       },
       {
-        "id": 12358,
+        "id": 12464,
         "nodeType": "ContractDefinition",
         "src": "59:285:7",
         "nodes": [
           {
-            "id": 12352,
+            "id": 12458,
             "nodeType": "FunctionDefinition",
             "src": "89:180:7",
             "nodes": [],
@@ -196,17 +196,17 @@
             "name": "flashLoanSimple",
             "nameLocation": "98:15:7",
             "parameters": {
-              "id": 12350,
+              "id": 12456,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12341,
+                  "id": 12447,
                   "mutability": "mutable",
                   "name": "receiverAddress",
                   "nameLocation": "131:15:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12352,
+                  "scope": 12458,
                   "src": "123:23:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -215,7 +215,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 12340,
+                    "id": 12446,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "123:7:7",
@@ -229,12 +229,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 12343,
+                  "id": 12449,
                   "mutability": "mutable",
                   "name": "asset",
                   "nameLocation": "164:5:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12352,
+                  "scope": 12458,
                   "src": "156:13:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -243,7 +243,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 12342,
+                    "id": 12448,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "156:7:7",
@@ -257,12 +257,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 12345,
+                  "id": 12451,
                   "mutability": "mutable",
                   "name": "amount",
                   "nameLocation": "187:6:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12352,
+                  "scope": 12458,
                   "src": "179:14:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -271,7 +271,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 12344,
+                    "id": 12450,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "179:7:7",
@@ -284,12 +284,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 12347,
+                  "id": 12453,
                   "mutability": "mutable",
                   "name": "params",
                   "nameLocation": "218:6:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12352,
+                  "scope": 12458,
                   "src": "203:21:7",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -298,7 +298,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 12346,
+                    "id": 12452,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "203:5:7",
@@ -311,12 +311,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 12349,
+                  "id": 12455,
                   "mutability": "mutable",
                   "name": "referralCode",
                   "nameLocation": "241:12:7",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12352,
+                  "scope": 12458,
                   "src": "234:19:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -325,7 +325,7 @@
                     "typeString": "uint16"
                   },
                   "typeName": {
-                    "id": 12348,
+                    "id": 12454,
                     "name": "uint16",
                     "nodeType": "ElementaryTypeName",
                     "src": "234:6:7",
@@ -340,18 +340,18 @@
               "src": "113:146:7"
             },
             "returnParameters": {
-              "id": 12351,
+              "id": 12457,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "268:0:7"
             },
-            "scope": 12358,
+            "scope": 12464,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 12357,
+            "id": 12463,
             "nodeType": "FunctionDefinition",
             "src": "275:67:7",
             "nodes": [],
@@ -362,23 +362,23 @@
             "name": "FLASHLOAN_PREMIUM_TOTAL",
             "nameLocation": "284:23:7",
             "parameters": {
-              "id": 12353,
+              "id": 12459,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "307:2:7"
             },
             "returnParameters": {
-              "id": 12356,
+              "id": 12462,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12355,
+                  "id": 12461,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12357,
+                  "scope": 12463,
                   "src": "333:7:7",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -387,7 +387,7 @@
                     "typeString": "uint128"
                   },
                   "typeName": {
-                    "id": 12354,
+                    "id": 12460,
                     "name": "uint128",
                     "nodeType": "ElementaryTypeName",
                     "src": "333:7:7",
@@ -401,7 +401,7 @@
               ],
               "src": "332:9:7"
             },
-            "scope": 12358,
+            "scope": 12464,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -414,11 +414,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          12358
+          12464
         ],
         "name": "AaveInterface",
         "nameLocation": "69:13:7",
-        "scope": 12359,
+        "scope": 12465,
         "usedErrors": [],
         "usedEvents": []
       }

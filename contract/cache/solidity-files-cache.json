@@ -264,8 +264,8 @@
       }
     },
     "src/FlashLoan.sol": {
-      "lastModificationDate": 1684035673917,
-      "contentHash": "686a544056e44370471031504485d186",
+      "lastModificationDate": 1684038697698,
+      "contentHash": "bcffb9bb1758a0072b4bcd9d8ff31a9c",
       "sourceName": "src/FlashLoan.sol",
       "solcConfig": {
         "settings": {
@@ -518,13 +518,8 @@
       }
     },
     "test/FlashLoan.t.sol": {
-<<<<<<< HEAD
-      "lastModificationDate": 1684035712087,
+      "lastModificationDate": 1684035946383,
       "contentHash": "d1540e5c9ddc9b1e244882d08121c397",
-=======
-      "lastModificationDate": 1684027538651,
-      "contentHash": "63c512eb88daee99c4be229ce723b4a1",
->>>>>>> a523f65a3a63852c6fb663bf30d5477956df18f2
       "sourceName": "test/FlashLoan.t.sol",
       "solcConfig": {
         "settings": {

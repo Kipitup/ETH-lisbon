@@ -130,17 +130,17 @@
   },
   "ast": {
     "absolutePath": "src/interfaces/NftfiInterface.sol",
-    "id": 12530,
+    "id": 12636,
     "exportedSymbols": {
       "NftfiInterface": [
-        12529
+        12635
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:189:11",
     "nodes": [
       {
-        "id": 12516,
+        "id": 12622,
         "nodeType": "PragmaDirective",
         "src": "32:25:11",
         "nodes": [],
@@ -152,12 +152,12 @@
         ]
       },
       {
-        "id": 12529,
+        "id": 12635,
         "nodeType": "ContractDefinition",
         "src": "59:161:11",
         "nodes": [
           {
-            "id": 12521,
+            "id": 12627,
             "nodeType": "FunctionDefinition",
             "src": "90:46:11",
             "nodes": [],
@@ -168,17 +168,17 @@
             "name": "payBackLoan",
             "nameLocation": "99:11:11",
             "parameters": {
-              "id": 12519,
+              "id": 12625,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12518,
+                  "id": 12624,
                   "mutability": "mutable",
                   "name": "_loanId",
                   "nameLocation": "118:7:11",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12521,
+                  "scope": 12627,
                   "src": "111:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -187,7 +187,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 12517,
+                    "id": 12623,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "111:6:11",
@@ -202,18 +202,18 @@
               "src": "110:16:11"
             },
             "returnParameters": {
-              "id": 12520,
+              "id": 12626,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "135:0:11"
             },
-            "scope": 12529,
+            "scope": 12635,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 12528,
+            "id": 12634,
             "nodeType": "FunctionDefinition",
             "src": "141:77:11",
             "nodes": [],
@@ -224,17 +224,17 @@
             "name": "loanRepaidOrLiquidated",
             "nameLocation": "150:22:11",
             "parameters": {
-              "id": 12524,
+              "id": 12630,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12523,
+                  "id": 12629,
                   "mutability": "mutable",
                   "name": "_loanId",
                   "nameLocation": "180:7:11",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12528,
+                  "scope": 12634,
                   "src": "173:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -243,7 +243,7 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 12522,
+                    "id": 12628,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
                     "src": "173:6:11",
@@ -258,17 +258,17 @@
               "src": "172:16:11"
             },
             "returnParameters": {
-              "id": 12527,
+              "id": 12633,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12526,
+                  "id": 12632,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12528,
+                  "scope": 12634,
                   "src": "212:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -277,7 +277,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 12525,
+                    "id": 12631,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "212:4:11",
@@ -291,7 +291,7 @@
               ],
               "src": "211:6:11"
             },
-            "scope": 12529,
+            "scope": 12635,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -304,11 +304,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          12529
+          12635
         ],
         "name": "NftfiInterface",
         "nameLocation": "69:14:11",
-        "scope": 12530,
+        "scope": 12636,
         "usedErrors": [],
         "usedEvents": []
       }

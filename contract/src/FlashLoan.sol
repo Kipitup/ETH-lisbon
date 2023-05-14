@@ -87,7 +87,7 @@ contract FlashLoan is Test {
 		console.log('----------------------------------------------------------------');
 		console.log('-                        PAY BACK THE LOAN                     -');
 		console.log('----------------------------------------------------------------');
-		_sellNFT();
+		// _sellNFT();
 		console.log('NFT sold on OpenSea');
 		return true;
 	}

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+html {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	@apply h-full bg-darkBg;
+}
+
+body {
+	@apply h-full;
+}
+
+#__next {
+	@apply h-full;
+}
+
+.gradient {
+	height: 180px;
+	background: linear-gradient(180deg, rgba(114, 255, 128, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.basic-cell {
+	@apply px-3 text-sm   text-[#CECECF] font-medium  whitespace-nowrap;
+}
+.first-basic-cell {
+	@apply pr-3 text-sm   text-[#CECECF] font-medium  whitespace-nowrap;
+}
+
+

@@ -12,7 +12,7 @@
   },
   "files": {
     "lib/forge-std/lib/ds-test/src/test.sol": {
-      "lastModificationDate": 1683927597470,
+      "lastModificationDate": 1684008683913,
       "contentHash": "82a8604fe648c30a9bd56444368704f0",
       "sourceName": "lib/forge-std/lib/ds-test/src/test.sol",
       "solcConfig": {
@@ -47,12 +47,12 @@
       "versionRequirement": ">=0.5.0",
       "artifacts": {
         "DSTest": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "test.sol/DSTest.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "test.sol/DSTest.json"
         }
       }
     },
     "lib/forge-std/src/Test.sol": {
-      "lastModificationDate": 1683927596439,
+      "lastModificationDate": 1684008683913,
       "contentHash": "c24fa818cefb82d78e5ce65eceb85fd6",
       "sourceName": "lib/forge-std/src/Test.sol",
       "solcConfig": {
@@ -91,18 +91,18 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Test": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Test.sol/Test.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Test.sol/Test.json"
         },
         "stdError": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Test.sol/stdError.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Test.sol/stdError.json"
         },
         "stdStorage": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Test.sol/stdStorage.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Test.sol/stdStorage.json"
         }
       }
     },
     "lib/forge-std/src/Vm.sol": {
-      "lastModificationDate": 1683927596439,
+      "lastModificationDate": 1684008683914,
       "contentHash": "5e242d192cc1a77ac825a45b4c89ef29",
       "sourceName": "lib/forge-std/src/Vm.sol",
       "solcConfig": {
@@ -137,12 +137,12 @@
       "versionRequirement": ">=0.6.0",
       "artifacts": {
         "Vm": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "Vm.sol/Vm.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "Vm.sol/Vm.json"
         }
       }
     },
     "lib/forge-std/src/console.sol": {
-      "lastModificationDate": 1683927596439,
+      "lastModificationDate": 1684008683914,
       "contentHash": "907ccc8c5df3f256f3e4c4a215f521a1",
       "sourceName": "lib/forge-std/src/console.sol",
       "solcConfig": {
@@ -177,12 +177,12 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "console.sol/console.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "console.sol/console.json"
         }
       }
     },
     "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router01.sol": {
-      "lastModificationDate": 1683993635323,
+      "lastModificationDate": 1684008683920,
       "contentHash": "95d8729b2c698dc663322167b3c085fe",
       "sourceName": "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
       "solcConfig": {
@@ -217,12 +217,12 @@
       "versionRequirement": ">=0.6.2",
       "artifacts": {
         "IUniswapV2Router01": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IUniswapV2Router01.sol/IUniswapV2Router01.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IUniswapV2Router01.sol/IUniswapV2Router01.json"
         }
       }
     },
     "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router02.sol": {
-      "lastModificationDate": 1683993635323,
+      "lastModificationDate": 1684008683921,
       "contentHash": "3fd36426274a5b35f7e702f87ba08a8e",
       "sourceName": "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
       "solcConfig": {
@@ -259,13 +259,13 @@
       "versionRequirement": ">=0.6.2",
       "artifacts": {
         "IUniswapV2Router02": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IUniswapV2Router02.sol/IUniswapV2Router02.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IUniswapV2Router02.sol/IUniswapV2Router02.json"
         }
       }
     },
     "src/FlashLoan.sol": {
-      "lastModificationDate": 1684020058773,
-      "contentHash": "4a53044bf81a158ce275e30f47b85c74",
+      "lastModificationDate": 1684035673917,
+      "contentHash": "686a544056e44370471031504485d186",
       "sourceName": "src/FlashLoan.sol",
       "solcConfig": {
         "settings": {
@@ -308,15 +308,15 @@
         "src/interfaces/IERC721.sol",
         "src/interfaces/NftfiInterface.sol"
       ],
-      "versionRequirement": null,
+      "versionRequirement": ">=0.8.0",
       "artifacts": {
         "FlashLoan": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "FlashLoan.sol/FlashLoan.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "FlashLoan.sol/FlashLoan.json"
         }
       }
     },
     "src/interfaces/AaveInterface.sol": {
-      "lastModificationDate": 1683927757670,
+      "lastModificationDate": 1684008684001,
       "contentHash": "29efb5d6a38792d54936cbe705457b10",
       "sourceName": "src/interfaces/AaveInterface.sol",
       "solcConfig": {
@@ -351,12 +351,12 @@
       "versionRequirement": null,
       "artifacts": {
         "AaveInterface": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "AaveInterface.sol/AaveInterface.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "AaveInterface.sol/AaveInterface.json"
         }
       }
     },
     "src/interfaces/ERC20Interface.sol": {
-      "lastModificationDate": 1683927773230,
+      "lastModificationDate": 1684008684002,
       "contentHash": "5865d5e55d5ec4d57081a00d02fc5c1e",
       "sourceName": "src/interfaces/ERC20Interface.sol",
       "solcConfig": {
@@ -391,12 +391,12 @@
       "versionRequirement": null,
       "artifacts": {
         "ERC20Interface": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "ERC20Interface.sol/ERC20Interface.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "ERC20Interface.sol/ERC20Interface.json"
         }
       }
     },
     "src/interfaces/IERC165.sol": {
-      "lastModificationDate": 1684018973185,
+      "lastModificationDate": 1684022484687,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "src/interfaces/IERC165.sol",
       "solcConfig": {
@@ -431,12 +431,12 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC165": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC165.sol/IERC165.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC165.sol/IERC165.json"
         }
       }
     },
     "src/interfaces/IERC721.sol": {
-      "lastModificationDate": 1684019000590,
+      "lastModificationDate": 1684022484687,
       "contentHash": "40a90c0d61be9563b1af681bb18c9021",
       "sourceName": "src/interfaces/IERC721.sol",
       "solcConfig": {
@@ -473,12 +473,12 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC721": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "IERC721.sol/IERC721.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "IERC721.sol/IERC721.json"
         }
       }
     },
     "src/interfaces/NftfiInterface.sol": {
-      "lastModificationDate": 1684011027107,
+      "lastModificationDate": 1684016925856,
       "contentHash": "fc88b805718d6e59287809bc7e7f440a",
       "sourceName": "src/interfaces/NftfiInterface.sol",
       "solcConfig": {
@@ -513,13 +513,13 @@
       "versionRequirement": null,
       "artifacts": {
         "NftfiInterface": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "NftfiInterface.sol/NftfiInterface.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "NftfiInterface.sol/NftfiInterface.json"
         }
       }
     },
     "test/FlashLoan.t.sol": {
-      "lastModificationDate": 1684019777337,
-      "contentHash": "59034d0625f70594dfd996e3a7619f78",
+      "lastModificationDate": 1684035712087,
+      "contentHash": "d1540e5c9ddc9b1e244882d08121c397",
       "sourceName": "test/FlashLoan.t.sol",
       "solcConfig": {
         "settings": {
@@ -567,12 +567,12 @@
       "versionRequirement": "^0.8.13",
       "artifacts": {
         "FlashLoanTest": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "FlashLoan.t.sol/FlashLoanTest.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "FlashLoan.t.sol/FlashLoanTest.json"
         }
       }
     },
     "test/TestUtils.sol": {
-      "lastModificationDate": 1684011165214,
+      "lastModificationDate": 1684016925857,
       "contentHash": "107cf018085a1c8f23b4d652f821c847",
       "sourceName": "test/TestUtils.sol",
       "solcConfig": {
@@ -612,10 +612,10 @@
       "versionRequirement": null,
       "artifacts": {
         "CheatCodes": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "TestUtils.sol/CheatCodes.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "TestUtils.sol/CheatCodes.json"
         },
         "TestUtils": {
-          "0.8.13+commit.abaa5c0e.Darwin.appleclang": "TestUtils.sol/TestUtils.json"
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "TestUtils.sol/TestUtils.json"
         }
       }
     }

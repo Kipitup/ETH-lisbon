@@ -47,10 +47,10 @@
     "loanRepaidOrLiquidated(uint32)": "0717f3aa",
     "payBackLoan(uint32)": "2b218022"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_loanId\",\"type\":\"uint32\"}],\"name\":\"loanRepaidOrLiquidated\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_loanId\",\"type\":\"uint32\"}],\"name\":\"payBackLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/NftfiInterface.sol\":\"NftfiInterface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":uniswap-v2-periphery/=lib/uniswap-v2-periphery/\"]},\"sources\":{\"src/interfaces/NftfiInterface.sol\":{\"keccak256\":\"0x8ab3ee1a82044f3667ae0ebd182b35bae0f3802fd210101bea8b019af5f8960f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8720d68032b2150705b1d6a8bf244fa66e7b657d8af2b9471d7d24e05e119994\",\"dweb:/ipfs/QmdtKhJp7iV9fRAUS1ZHs3h5jVpmZrUTZVkQTHA8HfSh4p\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_loanId\",\"type\":\"uint32\"}],\"name\":\"loanRepaidOrLiquidated\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"_loanId\",\"type\":\"uint32\"}],\"name\":\"payBackLoan\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/interfaces/NftfiInterface.sol\":\"NftfiInterface\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":uniswap-v2-periphery/=lib/uniswap-v2-periphery/\"]},\"sources\":{\"src/interfaces/NftfiInterface.sol\":{\"keccak256\":\"0x8ab3ee1a82044f3667ae0ebd182b35bae0f3802fd210101bea8b019af5f8960f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8720d68032b2150705b1d6a8bf244fa66e7b657d8af2b9471d7d24e05e119994\",\"dweb:/ipfs/QmdtKhJp7iV9fRAUS1ZHs3h5jVpmZrUTZVkQTHA8HfSh4p\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
-      "version": "0.8.13+commit.abaa5c0e"
+      "version": "0.8.20+commit.a1b79de6"
     },
     "language": "Solidity",
     "output": {
@@ -130,19 +130,19 @@
   },
   "ast": {
     "absolutePath": "src/interfaces/NftfiInterface.sol",
-    "id": 12285,
+    "id": 12530,
     "exportedSymbols": {
       "NftfiInterface": [
-        12284
+        12529
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:189:9",
+    "src": "32:189:11",
     "nodes": [
       {
-        "id": 12271,
+        "id": 12516,
         "nodeType": "PragmaDirective",
-        "src": "32:25:9",
+        "src": "32:25:11",
         "nodes": [],
         "literals": [
           "solidity",
@@ -152,34 +152,34 @@
         ]
       },
       {
-        "id": 12284,
+        "id": 12529,
         "nodeType": "ContractDefinition",
-        "src": "59:161:9",
+        "src": "59:161:11",
         "nodes": [
           {
-            "id": 12276,
+            "id": 12521,
             "nodeType": "FunctionDefinition",
-            "src": "90:46:9",
+            "src": "90:46:11",
             "nodes": [],
             "functionSelector": "2b218022",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "payBackLoan",
-            "nameLocation": "99:11:9",
+            "nameLocation": "99:11:11",
             "parameters": {
-              "id": 12274,
+              "id": 12519,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12273,
+                  "id": 12518,
                   "mutability": "mutable",
                   "name": "_loanId",
-                  "nameLocation": "118:7:9",
+                  "nameLocation": "118:7:11",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12276,
-                  "src": "111:14:9",
+                  "scope": 12521,
+                  "src": "111:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -187,10 +187,10 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 12272,
+                    "id": 12517,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "111:6:9",
+                    "src": "111:6:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint32",
                       "typeString": "uint32"
@@ -199,43 +199,43 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "110:16:9"
+              "src": "110:16:11"
             },
             "returnParameters": {
-              "id": 12275,
+              "id": 12520,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "135:0:9"
+              "src": "135:0:11"
             },
-            "scope": 12284,
+            "scope": 12529,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 12283,
+            "id": 12528,
             "nodeType": "FunctionDefinition",
-            "src": "141:77:9",
+            "src": "141:77:11",
             "nodes": [],
             "functionSelector": "0717f3aa",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "loanRepaidOrLiquidated",
-            "nameLocation": "150:22:9",
+            "nameLocation": "150:22:11",
             "parameters": {
-              "id": 12279,
+              "id": 12524,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12278,
+                  "id": 12523,
                   "mutability": "mutable",
                   "name": "_loanId",
-                  "nameLocation": "180:7:9",
+                  "nameLocation": "180:7:11",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12283,
-                  "src": "173:14:9",
+                  "scope": 12528,
+                  "src": "173:14:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -243,10 +243,10 @@
                     "typeString": "uint32"
                   },
                   "typeName": {
-                    "id": 12277,
+                    "id": 12522,
                     "name": "uint32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "173:6:9",
+                    "src": "173:6:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint32",
                       "typeString": "uint32"
@@ -255,21 +255,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "172:16:9"
+              "src": "172:16:11"
             },
             "returnParameters": {
-              "id": 12282,
+              "id": 12527,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 12281,
+                  "id": 12526,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 12283,
-                  "src": "212:4:9",
+                  "scope": 12528,
+                  "src": "212:4:11",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -277,10 +277,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 12280,
+                    "id": 12525,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "212:4:9",
+                    "src": "212:4:11",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -289,9 +289,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "211:6:9"
+              "src": "211:6:11"
             },
-            "scope": 12284,
+            "scope": 12529,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -304,15 +304,16 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          12284
+          12529
         ],
         "name": "NftfiInterface",
-        "nameLocation": "69:14:9",
-        "scope": 12285,
-        "usedErrors": []
+        "nameLocation": "69:14:11",
+        "scope": 12530,
+        "usedErrors": [],
+        "usedEvents": []
       }
     ],
     "license": "MIT"
   },
-  "id": 9
+  "id": 11
 }

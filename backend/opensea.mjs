@@ -33,9 +33,10 @@ async function sendTransaction({ orderData, seller }) {
     };
 
     console.log(transaction)
-    // const hash = await walletClient.sendTransaction(transaction)
+    return
+    const hash = await walletClient.sendTransaction(transaction)
 
-    // console.log(hash)
+    console.log(hash)
 
   } catch (error) {
     console.error("sending tx: ", error)
@@ -118,7 +119,7 @@ async function main(seller) {
     const orderData = await getBestOfferAndFulfill({
       seller,
       nftAddress: '0xf5de760f2e916647fd766B4AD9E85ff943cE3A2b',
-      tokenId: '2756267',
+      tokenId: '2756270',
       collectionSlug: 'multifaucet-nft-v3'
     });
 
@@ -129,4 +130,4 @@ async function main(seller) {
   }
 }
 
-main('0x04c1b9B656Ae90DcFF5D363884c1D812D6790F9a')
+main('0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f')

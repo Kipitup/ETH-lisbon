@@ -52,8 +52,8 @@
       }
     },
     "lib/forge-std/src/Test.sol": {
-      "lastModificationDate": 1684008683913,
-      "contentHash": "c24fa818cefb82d78e5ce65eceb85fd6",
+      "lastModificationDate": 1684485714821,
+      "contentHash": "ae45feba2b2d5b30f0616c4f9345afb1",
       "sourceName": "lib/forge-std/src/Test.sol",
       "solcConfig": {
         "settings": {
@@ -86,7 +86,7 @@
       "imports": [
         "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol"
+        "lib/forge-std/src/console2.sol"
       ],
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
@@ -141,10 +141,10 @@
         }
       }
     },
-    "lib/forge-std/src/console.sol": {
-      "lastModificationDate": 1684008683914,
-      "contentHash": "907ccc8c5df3f256f3e4c4a215f521a1",
-      "sourceName": "lib/forge-std/src/console.sol",
+    "lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1684485696807,
+      "contentHash": "02187494617783aa1ee083308de505dc",
+      "sourceName": "lib/forge-std/src/console2.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -176,8 +176,8 @@
       "imports": [],
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
-        "console": {
-          "0.8.20+commit.a1b79de6.Darwin.appleclang": "console.sol/console.json"
+        "console2": {
+          "0.8.20+commit.a1b79de6.Darwin.appleclang": "console2.sol/console2.json"
         }
       }
     },
@@ -264,8 +264,8 @@
       }
     },
     "src/FlashLoan.sol": {
-      "lastModificationDate": 1684056182717,
-      "contentHash": "01bc94c24e212431739c845140b5c750",
+      "lastModificationDate": 1684485728077,
+      "contentHash": "fa808c7a885af6051c1acdb9b68d43e6",
       "sourceName": "src/FlashLoan.sol",
       "solcConfig": {
         "settings": {
@@ -299,7 +299,7 @@
         "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Test.sol",
         "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
         "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
         "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
         "src/interfaces/AaveInterface.sol",
@@ -518,8 +518,8 @@
       }
     },
     "test/FlashLoan.t.sol": {
-      "lastModificationDate": 1684035946383,
-      "contentHash": "d1540e5c9ddc9b1e244882d08121c397",
+      "lastModificationDate": 1684485744999,
+      "contentHash": "f98770348dbe8ec3604f5e5e4b187447",
       "sourceName": "test/FlashLoan.t.sol",
       "solcConfig": {
         "settings": {
@@ -553,7 +553,7 @@
         "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Test.sol",
         "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol",
+        "lib/forge-std/src/console2.sol",
         "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router01.sol",
         "lib/uniswap-v2-periphery/contracts/interfaces/IUniswapV2Router02.sol",
         "src/FlashLoan.sol",
@@ -607,7 +607,7 @@
         "lib/forge-std/lib/ds-test/src/test.sol",
         "lib/forge-std/src/Test.sol",
         "lib/forge-std/src/Vm.sol",
-        "lib/forge-std/src/console.sol"
+        "lib/forge-std/src/console2.sol"
       ],
       "versionRequirement": null,
       "artifacts": {

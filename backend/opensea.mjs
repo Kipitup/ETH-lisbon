@@ -72,6 +72,7 @@ async function getBestOfferAndFulfill({ seller, nftAddress, tokenId, collectionS
   // Convert Wei to Ether
   const maxAmountInEther = maxAmount.dividedBy(new BigNumber(10).pow(18));
 
+  console.log(bestOffer)
   console.log(`Best offer amount in Ether: ${maxAmountInEther.toString()}`);
 
   if (!bestOffer) {
@@ -119,7 +120,7 @@ async function main(seller) {
     const orderData = await getBestOfferAndFulfill({
       seller,
       nftAddress: '0xf5de760f2e916647fd766B4AD9E85ff943cE3A2b',
-      tokenId: '2756270',
+      tokenId: '2756267',
       collectionSlug: 'multifaucet-nft-v3'
     });
 
@@ -130,4 +131,4 @@ async function main(seller) {
   }
 }
 
-main('0x5615dEB798BB3E4dFa0139dFa1b3D433Cc23b72f')
+main('0xEF13aAC4dBCF336Ed855a0Ee4166117332501C75')
